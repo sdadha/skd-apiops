@@ -1,0 +1,42 @@
+apimServiceName: prod
+namedValues:
+  - name: cachettlduration
+    properties:
+      displayName: cachettlduration
+      value: "3600"
+#  - name: APIKey
+#    properties:
+#      displayName: APIKey
+#      keyVault:
+#        identityClientId: 51a57863-a705-42d7-81d5-bce544a0116a
+#        secretIdentifier: https://skd-kv.vault.azure.net/secrets/my-secret
+loggers:
+    - name: apim-lab-insights
+      properties:
+        loggerType: applicationInsights
+        description: prod application insights
+        resourceId: "/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/SKD-Sandbox/providers/microsoft.insights/components/skdsandbox-appinsights"
+        credentials:
+          instrumentationKey: "{{Logger-Credentials--63da261446346112c8f24218}}"
+        isBuffered: true
+diagnostics:
+   - name: applicationinsights
+     properties:
+       verbosity: Error
+       loggerId: "/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/SKD-Sandbox/providers/Microsoft.ApiManagement/service/skd-apim-prod/loggers/apim-lab-insights"
+#backends:
+#  - name: helloworldfromfuncapp
+#    properties:
+#      url: "https://helloworldfromprodfuncapp.azurewebsites.net/api"
+#      resourceid: "https://management.azure.com/subscriptions/[subscription Guid goes here]/resourceGroups/rg-apim-lab-prod/providers/Microsoft.Web/sites/helloworldfromprodfuncapp"
+#- name: LogicApp_helloworldfromlogicapp_rg-apim-lab_77fadbdc74f14ce88962b34400a1f170
+#    properties:
+#      url: "https://prod-75.eastus.logic.azure.com/workflows/[guid goes here]/triggers"
+#      resourceid: "https://management.azure.com/subscriptions/[subscription Guid goes here]/resourceGroups/rg-apim-lab-prod/providers/Microsoft.Logic/workflows/helloworldfromprodlogicapp"
+apis:
+  - name: demo-conference-api
+    diagnostics:
+      - name: applicationinsights
+        properties:
+          verbosity: Error
+          loggerId: "/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/SKD-Sandbox/providers/Microsoft.ApiManagement/service/skd-apim-prod/loggers/apim-lab-insights"
