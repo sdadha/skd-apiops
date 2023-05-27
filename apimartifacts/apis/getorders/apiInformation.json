@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "apiRevision": "2",
+    "apiRevisionDescription": "Rate Limit Policies applied",
+    "apiVersionSetId": "/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/SKD-Sandbox/providers/Microsoft.ApiManagement/service/SKD-APIM-TEST/apiVersionSets/644e51eaeabf663990435a6b",
+    "authenticationSettings": {},
+    "description": "Azure Logic App.",
+    "displayName": "getOrders",
+    "isCurrent": true,
+    "path": "getorder",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://prod-16.centralindia.logic.azure.com/workflows/4cc3bdfaf7754952ae91e55f33c2e4d9/triggers",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}
