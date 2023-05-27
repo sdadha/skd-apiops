@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "API getOrders subscription",
+    "allowTracing": false,
+    "scope": "/apis/getorders",
+    "state": "active"
+  }
+}
