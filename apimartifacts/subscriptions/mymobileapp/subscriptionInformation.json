@@ -1,8 +1,0 @@
-{
-  "properties": {
-    "displayName": "mymobileapp",
-    "allowTracing": false,
-    "scope": "/apis/demo-conference-api",
-    "state": "active"
-  }
-}

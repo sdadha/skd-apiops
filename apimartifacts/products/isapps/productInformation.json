@@ -1,9 +1,0 @@
-{
-  "properties": {
-    "approvalRequired": true,
-    "description": "Infosys IS Microservice APIs",
-    "displayName": "ISApps",
-    "state": "published",
-    "subscriptionRequired": true
-  }
-}

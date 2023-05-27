@@ -1,9 +1,0 @@
-{
-  "properties": {
-    "approvalRequired": false,
-    "description": "Managed by Static Web Apps. Do not change or delete.",
-    "displayName": "Generated for Static Web Apps resource  with default hostname: kind-glacier-0d7fd7210",
-    "state": "published",
-    "subscriptionRequired": true
-  }
-}
