@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "displayName": "cachettlduration",
+    "secret": false,
+    "tags": [],
+    "value": "60"
+  }
+}

@@ -1,0 +1,53 @@
+openapi: 3.0.1
+info:
+  title: Star Wars API
+  description: API To test APIM
+  version: v3
+servers:
+  - url: https://skd-apim-test.azure-api.net/sw/v3
+paths:
+  /film/:
+    get:
+      summary: GetFilm
+      description: GetFilm
+      operationId: getfilm
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json: { }
+  '/people/{id}/':
+    get:
+      summary: GetPeopleById
+      description: GetPeopleById
+      operationId: getpeoplebyid
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: '"SecureString"'
+      responses:
+        '200':
+          description: ''
+  /people/:
+    get:
+      summary: GetPeople
+      description: GetPeople
+      operationId: getpeople
+      responses:
+        '200':
+          description: ''
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]
