@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "Azure Logic App.",
+    "displayName": "createorderskd",
+    "isCurrent": true,
+    "path": "createorderapi",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://prod-22.centralindia.logic.azure.com/workflows/7798b40ab51042e4b0482e2869818be1/triggers",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

@@ -1,0 +1,54 @@
+openapi: 3.0.1
+info:
+  title: getOrders
+  description: Azure Logic App.
+  version: v2
+servers:
+  - url: https://skd-apim-test.azure-api.net/getorder/v2
+paths:
+  /getorderdetails:
+    get:
+      summary: order-details
+      description: Get all order details!
+      operationId: manual-invoke
+      requestBody:
+        description: The request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/request-manual'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ManualPathsInvokeGet200ApplicationJsonResponse'
+              example:
+                CustomerName: John Doe
+                OrderID: '141728'
+        '500':
+          description: The Logic App Response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ManualPathsInvokeGet500ApplicationJsonResponse'
+components:
+  schemas:
+    request-manual: { }
+    ManualPathsInvokeGet200ApplicationJsonResponse:
+      type: object
+    ManualPathsInvokeGet500ApplicationJsonResponse:
+      type: object
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]
