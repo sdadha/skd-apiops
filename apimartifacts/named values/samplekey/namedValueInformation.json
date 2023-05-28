@@ -1,8 +1,0 @@
-{
-  "properties": {
-    "displayName": "samplekey",
-    "secret": false,
-    "tags": [],
-    "value": "123"
-  }
-}
