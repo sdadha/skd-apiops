@@ -11,14 +11,14 @@ namedValues:
 #        identityClientId: 51a57863-a705-42d7-81d5-bce544a0116a
 #        secretIdentifier: https://skd-kv.vault.azure.net/secrets/my-secret
 loggers:
-    - name: skd-prod-apim-appinsights
-      properties:
-        loggerType: applicationInsights
-        description: prod application insights
-        resourceId: "/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/SKD-Sandbox/providers/microsoft.insights/components/skd-prod-apim-appinsights"
-        credentials:
-          instrumentationKey: "{{Logger-Credentials--6472264d217d2016d83c6dba}}"
-        isBuffered: true
+  - name: skd-prod-apim-appinsights
+    properties:
+      loggerType: applicationInsights
+      description: prod application insights
+      resourceId: "/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/SKD-Sandbox/providers/microsoft.insights/components/skd-prod-apim-appinsights"
+      credentials:
+        instrumentationKey: "{{Logger-Credentials--6472264d217d2016d83c6dba}}"
+      isBuffered: true
 diagnostics:
    - name: applicationinsights
      properties:
