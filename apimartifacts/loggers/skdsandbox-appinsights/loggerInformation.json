@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "credentials": {
+      "instrumentationKey": "{{Logger-Credentials--63da261446346112c8f24218}}"
+    },
+    "isBuffered": true,
+    "loggerType": "applicationInsights",
+    "resourceId": "/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/SKD-Sandbox/providers/microsoft.insights/components/skdsandbox-appinsights"
+  }
+}

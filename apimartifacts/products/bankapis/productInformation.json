@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "approvalRequired": true,
+    "description": "APIs for consumpiton  from bank",
+    "displayName": "BankAPIs",
+    "state": "published",
+    "subscriptionRequired": true,
+    "subscriptionsLimit": 10,
+    "terms": "www.microsoft.com"
+  }
+}
