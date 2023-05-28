@@ -1,8 +1,0 @@
-{
-  "properties": {
-    "description": "updatedbla",
-    "protocol": "http",
-    "resourceId": "https://management.azure.com/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/demorgjpe/providers/Microsoft.Logic/workflows/updatedbla",
-    "url": "https://prod-02.centralindia.logic.azure.com/workflows/2e5df540aaf84e77b3ed06078abff893/triggers"
-  }
-}

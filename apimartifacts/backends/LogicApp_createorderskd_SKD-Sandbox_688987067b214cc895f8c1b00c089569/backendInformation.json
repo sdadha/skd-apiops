@@ -1,8 +1,0 @@
-{
-  "properties": {
-    "description": "createorderskd",
-    "protocol": "http",
-    "resourceId": "https://management.azure.com/subscriptions/68898706-7b21-4cc8-95f8-c1b00c089569/resourceGroups/SKD-Sandbox/providers/Microsoft.Logic/workflows/createorderskd",
-    "url": "https://prod-22.centralindia.logic.azure.com/workflows/7798b40ab51042e4b0482e2869818be1/triggers"
-  }
-}
